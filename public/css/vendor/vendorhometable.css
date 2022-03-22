@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobilecontrol {
+    display: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #010101;
+    position: relative;
+    overflow: auto;
+}
+
+span,
+i,
+a {
+    display: inline-block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .topbar-left,
+header .topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-left .logo i {
+    font-size: 10px;
+    display: inline-block;
+}
+
+.topbar-left .logo span {
+    margin: 0 4px;
+}
+
+.topbar-right .user {
+    padding: 2px 4px;
+    font-size: 12px;
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    margin: 0 2px 0 5px;
+}
+
+.topbar-right i {
+    font-size: 12px;
+    color: gray;
+    align-self: flex-start;
+}
+
+.message {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    display: flex;
+    padding: 16px;
+    margin-top: 20px;
+    width: 100vw;
+}
+
+.shadow {
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.sidebar {
+    width: 18%;
+    padding: 10px;
+    height: 100px;
+}
+
+.content {
+    width: 82%;
+}
+
+.sidebar-top {
+    background-color: rgb(233, 233, 145, 0.3);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: rgb(173, 144, 11);
+}
+
+.sidebar-bottom {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.sidebar-bottom ul li a {
+    color: #2693b8;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.sidebar-bottom ul li a i {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.sidebar-bottom ul hr {
+    margin: 20px 0;
+}
+
+.sidebar-bottom .list-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content-top {
+    padding: 15px 14px 15px 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-wrapper label {
+    margin-right: 20px;
+    width: 15%;
+    min-width: 75px;
+}
+
+.input-holder {
+    max-width: 250px;
+    width: 80%;
+    border-radius: 2px;
+    background-color: white;
+    padding: 1px 1px;
+}
+
+.input-holder input {
+    background-color: transparent;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    position: absolute;
+}
+
+.input-holder input:focus {
+    outline: none;
+}
+
+.btn {
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background: rgb(21, 148, 200);
+    background: linear-gradient( 180deg, rgba(21, 148, 200, 1) 0%, rgba(9, 42, 110, 1) 100%);
+}
+
+.btn-gray {
+    color: #010101;
+    background: rgb(255, 255, 255);
+    background: linear-gradient( 180deg, rgba(255, 255, 255, 1) 0%, rgba(177, 177, 177, 1) 100%);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.btn-wrapper {
+    display: flex;
+    margin-left: 100px;
+}
+
+.btn-wrapper .btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.searchbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+}
+
+.searchbar .searchbar1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar .searchbar2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.searchbar .searchbar2 .tableheader {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar .searchbar2 input {
+    height: 30px;
+    width: 50%;
+}
+
+.data-table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.data-table table {
+    width: 100%;
+}
+
+.data-table thead tr th {
+    font-size: 14px;
+    padding: 8px;
+}
+
+.data-table tbody tr tD {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.data-table .user-id span {
+    padding: 1px 4px;
+    display: inline-block;
+    background-color: #020202;
+    color: white;
+    margin-right: 2px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.data-table .user-id {
+    display: flex;
+    align-items: center;
+}
+
+.data-table .name {
+    color: #303030;
+}
+.data-table .nameacc {
+    color: white;
+}
+.data-table .credit {
+    color: rgb(255, 136, 136);
+}
+.data-table .creditacc {
+    color: white
+}
+.data-table .state span {
+    color: white;
+    background-color: rgb(95, 20, 20, 0.9);
+    border-radius: 4px;
+    padding: 3px 4px;
+}
+
+.data-table .state i {
+    color: white;
+    background-color: rgb(95, 20, 20, 0.9);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.data-table .revert {
+    color: white;
+    background-color: rgb(160, 34, 34);
+}
+
+.data-table .state2 span {
+    color: white;
+    background-color: rgba(60, 95, 20, 0.9);
+    border-radius: 4px;
+    padding: 3px 4px;
+}
+
+.data-table .lock i {
+    color: white;
+    background-color: rgb(108, 233, 108);
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.data-table .deposit-redeem button {
+    color: white;
+    background-color: rgb(85, 240, 85);
+    border-radius: 4px;
+    padding: 8px 10px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.data-table .deposit-redeem .deposite {
+    background: rgb(21, 148, 200);
+    background: linear-gradient( 180deg, rgba(21, 148, 200, 1) 0%, rgba(9, 42, 110, 1) 100%);
+    border-radius: 4px 0 0 4px;
+}
+
+.data-table .deposit-redeem .redeem {
+    background: rgb(223, 41, 41);
+    background: linear-gradient( 180deg, rgba(223, 41, 41, 1) 0%, rgba(107, 0, 0, 1) 100%);
+    border-radius: 0 4px 4px 0;
+}
+
+.data-table .delete span {
+    background: rgb(223, 41, 41);
+    background: linear-gradient( 180deg, rgba(223, 41, 41, 1) 0%, rgba(107, 0, 0, 1) 100%);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.close {
+    display: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.btn-light {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: #010101;
+    font-weight: 100;
+    font-size: 12px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: inline-block;
+}
+
+@media (max-width: 1200px) {
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar {
+        background-color: transparent;
+        border: none;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    .close {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+    .close button {
+        font-size: 26px;
+        text-align: right;
+        border: none;
+        background-color: transparent;
+    }
+    .sidebar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        max-width: 340px;
+        width: 100%;
+        z-index: 9999;
+        padding: 30px;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.7);
+        transition: all 0.5s;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar {
+        background-color: transparent;
+        border: none;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    .close {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+    .close button {
+        font-size: 26px;
+        text-align: right;
+        border: none;
+        background-color: transparent;
+    }
+    .sidebar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        max-width: 340px;
+        width: 100%;
+        z-index: 9999;
+        padding: 30px;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.7);
+        transition: all 0.5s;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar {
+        background-color: transparent;
+        border: none;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .close {
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .close button {
+        font-size: 20px;
+    }
+    .sidebar {
+        top: 0;
+        height: 100vh;
+        max-width: 250px;
+        width: 90%;
+        z-index: 9999;
+        padding: 10px;
+        transition: all 0.5s;
+    }
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 8px;
+    }
+    header .logo {
+        margin-right: 14px;
+        font-size: 14px;
+    }
+    .main-wrapper {
+        display: flex;
+        padding: 8px;
+        margin-top: 10px;
+    }
+    .content {
+        padding: 5px;
+    }
+    .content-top {
+        padding: 10px 8px 10px 25px;
+    }
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .input-wrapper label {
+        margin-right: 12px;
+    }
+    .input-holder {
+        max-width: 200px;
+        height: 25px;
+        padding: 1px 1px;
+        display: flex;
+    }
+    .btn-blue {
+        font-size: 11px;
+    }
+    .btn-gray {
+        font-size: 11px;
+    }
+    .btn {
+        padding: 3px 10px;
+        border-radius: 3px;
+    }
+    .data-table {
+        margin-top: 35px;
+    }
+    .data-table {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .data-table table {
+        width: 100%;
+    }
+    .data-table thead tr th {
+        font-size: 11px;
+        padding: 6px;
+    }
+    .data-table tbody tr td {
+        font-size: 10px;
+        padding: 6px;
+    }
+    .data-table .user-id {
+        font-size: 9px;
+    }
+    .data-table .user-id span {
+        padding: 1px 2px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+    .data-table .state span {
+        border-radius: 3px;
+        padding: 2px 3px;
+        font-size: 9px;
+    }
+    .data-table .state i {
+        border-radius: 3px;
+        padding: 3px;
+    }
+    .data-table .state2 span {
+        border-radius: 3px;
+        padding: 2px 3px;
+        font-size: 9px;
+    }
+    .data-table .lock i {
+        border-radius: 3px;
+        padding: 3px 4px;
+    }
+    .data-table .deposit-redeem button {
+        border-radius: 3px;
+        padding: 4px 6px;
+        font-size: 8px;
+    }
+    .data-table .deposit-redeem .deposite {
+        border-radius: 2px 0 0 2px;
+    }
+    .data-table .deposit-redeem .redeem {
+        border-radius: 0 2px 2px 0;
+    }
+    .data-table .delete span {
+        padding: 4px 6px;
+        border-radius: 2px;
+    }
+    .btn-light {
+        padding: 1px;
+        border-radius: 2px;
+        font-size: 9px;
+    }
+    .data-table .revert {
+        font-size: 9px;
+    }
+    .bodyview3 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar {
+        background-color: transparent;
+        border: none;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .close {
+        padding: 12px;
+        padding-bottom: 30px;
+    }
+    .close button {
+        font-size: 20px;
+    }
+    .sidebar {
+        top: 0;
+        height: 100vh;
+        max-width: 250px;
+        width: 90%;
+        z-index: 9999;
+        padding: 12px;
+        transition: all 0.5s;
+    }
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 9px;
+    }
+    header .logo {
+        margin-right: 14px;
+        font-size: 16px;
+    }
+    .main-wrapper {
+        display: flex;
+        padding: 8px;
+        margin-top: 10px;
+    }
+    .content {
+        padding: 5px;
+    }
+    .content-top {
+        padding: 10px 8px 10px 25px;
+    }
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .input-wrapper label {
+        margin-right: 12px;
+    }
+    .input-holder {
+        max-width: 200px;
+        height: 25px;
+        padding: 1px 1px;
+        display: flex;
+    }
+    .btn-blue {
+        font-size: 12px;
+    }
+    .btn-gray {
+        font-size: 12px;
+    }
+    .btn {
+        padding: 4px 12px;
+        border-radius: 3px;
+    }
+    .data-table {
+        margin-top: 35px;
+    }
+    .data-table {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .data-table table {
+        width: 100%;
+    }
+    .data-table thead tr th {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .data-table tbody tr td {
+        font-size: 11px;
+        padding: 6px;
+    }
+    .data-table .user-id {
+        font-size: 10px;
+    }
+    .data-table .user-id span {
+        padding: 1px 2px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+    .data-table .state span {
+        border-radius: 3px;
+        padding: 2px 3px;
+        font-size: 9px;
+    }
+    .data-table .state i {
+        border-radius: 3px;
+        padding: 3px;
+    }
+    .data-table .state2 span {
+        border-radius: 3px;
+        padding: 2px 3px;
+        font-size: 10px;
+    }
+    .data-table .lock i {
+        border-radius: 3px;
+        padding: 3px 4px;
+    }
+    .data-table .deposit-redeem button {
+        border-radius: 3px;
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+    .data-table .deposit-redeem .deposite {
+        border-radius: 2px 0 0 2px;
+    }
+    .data-table .deposit-redeem .redeem {
+        border-radius: 0 2px 2px 0;
+    }
+    .data-table .delete span {
+        padding: 4px 6px;
+        border-radius: 2px;
+    }
+    .btn-light {
+        padding: 1px;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+    .data-table .revert {
+        font-size: 10px;
+    }
+    .bodyview3 {
+        font-size: 14px;
+    }
+}

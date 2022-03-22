@@ -1,0 +1,136 @@
+.Clat-topbar {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 30px;
+    padding: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+}
+
+.Clat-topbar .leftside {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Clat-topbar .leftside .bars {
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+.Clat-topbar .leftside .bars .icon1 {
+    width: 15px;
+    height: 2px;
+    margin-top: 4px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    transform: rotate(0);
+    transform-origin: -11% 80%;
+}
+
+.Clat-topbar .leftside .bars .icon2 {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
+    opacity: 1;
+}
+
+.Clat-topbar .leftside .bars .icon3 {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
+    transform: rotate(0);
+    margin-right: 5px;
+    transform-origin: 0% 50%;
+}
+
+.Clat-topbar .leftside a {
+    font-size: 15px;
+    color: white;
+    margin-top: 3px;
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Clat-topbar .leftside .licons {
+    margin-top: -2px;
+}
+
+.Clat-topbar .leftside .licons:hover {
+    background-color: rgba(0, 255, 242, 0.6);
+}
+
+.Clat-topbar .leftside a:hover .bars {
+    background-color: transparent;
+}
+
+.Clat-topbar .leftside a:hover i {
+    animation: topbarhovers .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes topbarhovers {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.Clat-topbar .leftside .supclass {
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: -10px;
+    padding: 2px 4px 2px 4px;
+}
+
+.Clat-topbar .center {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.Clat-topbar .right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Clat-topbar .right a {
+    font-size: 15px;
+    color: white;
+    margin-top: 3px;
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Clat-topbar .right .a:hover {
+    background-color: rgba(0, 255, 242, 0.6);
+}

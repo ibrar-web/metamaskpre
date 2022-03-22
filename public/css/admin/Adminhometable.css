@@ -1,0 +1,167 @@
+.tabledesign {
+    display: block;
+    width: 84.5vw;
+    height: 93vh;
+    margin-left: 15.8vw;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.tabledesign .leftside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.tabledesign .leftside .leftsideone {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    /* background: #1750b9; */
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.tabledesign .leftside .leftsideone1 {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabledesign .leftside .leftsideone1 select {
+    height: 25px;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.tabledesign .leftside .leftsideone2 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.tabledesign .leftside .leftsideone3 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+}
+
+.tabledesign .leftside .leftsidetwo {
+    width: 98%;
+    height: 100%;
+    color: black;
+    padding: 15px;
+}
+
+.tabledesign .leftside .leftsidetwo .tablebottomargin {
+    height: 40px;
+}
+
+.onlinetablesearch {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.pagefootertad {
+    height: 30px;
+    z-index: 111;
+    position: fixed;
+    bottom: 0;
+    width: 80vw;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+}
+
+.pagefootertad .pagefootertad2 {
+    height: 30px;
+    width: 50%;
+    display: flex;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    color: white;
+}
+
+.pagefootertad .pagefootertad2 button {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+    font-size: 13px;
+    height: 29px;
+    line-height: .6;
+    vertical-align: auto;
+}
+
+.menu1.btn {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.modal-content .btn {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: rgb(10, 190, 70);
+}
+
+.modal-backdrop {
+    display: block;
+    z-index: 0;
+}
+
+.deposit {
+    background-color: green;
+    padding: 1px 4px;
+    border-radius: 5px;
+    width: 70px;
+    color: white;
+}
+
+.withdrawal {
+    padding: 1px 4px;
+    background-color: red;
+    border-radius: 5px;
+    width: 70px;
+    color: white;
+}
+
+.redeem {
+    background-color: red;
+    padding: 1px 4px;
+    border-radius: 5px;
+    width: 70px;
+    color: white;
+}
+
+.deposit2 {
+    color: green !important;
+    font-weight: 600;
+}
+
+.withdrawal2 {
+    color: red !important;
+    font-weight: 600;
+}
+
+.redeem2 {
+    color: red !important;
+    font-weight: 600;
+}

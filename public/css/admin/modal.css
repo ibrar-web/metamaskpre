@@ -1,0 +1,261 @@
+.modal-body1 .inputs {
+    height: 280px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body1 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body1 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body1 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-body1 .inputs button {
+    font-size: 15px;
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+}
+
+.modal-body2 .inputs {
+    height: 200px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body2 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body2 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body2 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-body3 .inputs {
+    height: 80px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body3 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body3 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body3 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-body4 .inputs {
+    height: 40px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body4 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body4 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body4 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-body5 .inputs {
+    height: 300px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body5 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body5 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body5 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-content5 {
+    width: 800px !important;
+}
+
+.modal-body5 {
+    width: 800px !important;
+}
+
+.modal-body5 .inputs {
+    height: 450px;
+    width: 740px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.modal-body5 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body5 .inputs .name {
+    height: 30px;
+    width: 100%;
+    color: black;
+    display: flex;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.modal-body5 .inputs table {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.modal-body5 .inputs table thead {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.modal-body5 .inputs table thead tr {
+    height: 35px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: rgb(71, 112, 151);
+}
+
+.modal-dialog {
+    top: 10%;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+}
+
+.modal-body6 .inputs {
+    height: 100px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body6 .inputs div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.modal-body6 .inputs label {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.modal-body6 .inputs input {
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.fade {
+    display: none;
+}
+
+.show {
+    display: none;
+}
